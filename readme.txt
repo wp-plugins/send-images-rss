@@ -3,9 +3,9 @@
 Contributors: littler.chicken, garyj
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FEFGGUG88LBKQ
 Tags: email, RSS, feed, mailchimp, email campaign, RSS email, feedburner, email marketing
-Requires at least: 3.5
-Tested up to: 4.0beta3
-Stable tag: 2.4.1
+Requires at least: 3.8
+Tested up to: 4.0
+Stable tag: 2.4.2
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -19,7 +19,7 @@ The plugin optionally adds a new email friendly image size to WordPress. Any lar
 
 == Installation ==
 
-1. Upload the entire `send-images-to-rss` folder to your `/wp-content/plugins` directory.
+1. Upload the entire `send-images-rss` folder to your `/wp-content/plugins` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 1. Optionally, visit the Settings > Media page to change the default behavior of the plugin.
 
@@ -30,6 +30,10 @@ The plugin optionally adds a new email friendly image size to WordPress. Any lar
 Most users should not need to change this. The plugin is designed with a default image size of 560 pixels for the width of the new image. If, however, your RSS email template is more or less than 600 pixels wide, or you're using a template with a sidebar, you may need to change this setting. What number you choose is up to you.
 
 **Note:** If you use a template with a sidebar, I strongly recommend that you opt to use the Alternate Feed for your emails, as your images will be too small to be attractive on services like Flipboard and Feedly.
+
+= Does this plugin work with excerpts? =
+
+Nope. This plugin is intended for use with full content feeds only. There are several plugins which will resize and/or add your post's featured image to your feed; those work best if your feed is excerpts.
 
 = What about smaller images? =
 
@@ -59,7 +63,17 @@ If you use native WordPress galleries in your posts, they're sent to your feed a
 
 1. Screenshot of the optional plugin settings in Settings > Media.
 
+== Upgrade Notice ==
+
+= 2.4.2 =
+Prepared for WordPress 4.0 release.
+
 == Changelog ==
+
+= 2.4.2 =
+* updated for new WordPress version.
+* added plugin icon.
+* moved, but did not change, main image function.
 
 = 2.4.1 =
 * bugfix: corrected sanitization method for email image size.
